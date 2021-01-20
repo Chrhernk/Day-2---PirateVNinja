@@ -34,7 +34,3 @@ void DisplayIntro()
 	std::cout << std::endl << "Welcome into the world of Pirates Versus Ninjas!" << std::endl << std::endl;
 	std::cout << "Prepare for the war of a lifetime!!!" << std::endl;
 }
-
-
-
-
