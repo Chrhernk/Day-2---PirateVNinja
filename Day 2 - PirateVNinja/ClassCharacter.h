@@ -34,7 +34,7 @@ public:
 
 private:
     //Secret stats!
-    int Health =0;
+    int Health =100;
     int Dex =0;
     int Charisma =0;
     int Str =0;
