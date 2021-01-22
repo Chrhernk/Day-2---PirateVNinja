@@ -20,7 +20,7 @@ int main()
 	Ninja.DisplayStats();
 	Ninja.ThrowStars();
 	Ninja.Attack();
-
+	 
 	Pirate.Talk("And here be my score sheet!");
 	Pirate.DisplayStats();
 	Pirate.UseSword();
