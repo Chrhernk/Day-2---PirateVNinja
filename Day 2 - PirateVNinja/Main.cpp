@@ -19,11 +19,12 @@ int main()
 	Ninja.Talk("And Check out my stats!");
 	Ninja.DisplayStats();
 	Ninja.ThrowStars();
+	Ninja.Attack();
 
 	Pirate.Talk("And here be my score sheet!");
 	Pirate.DisplayStats();
 	Pirate.UseSword();
-
+	Pirate.Attack();
 
 	//returns 0
 	return 0;
