@@ -25,3 +25,8 @@ void ClassNynja::Talk(std::string StuffToSay)
 {
 	std::cout << std::endl << "Kon'nichiwa, watashinonamaeha " << Name << " " << StuffToSay << std::endl; // What it says
 }
+
+void ClassNynja::Attack()
+{
+	std::cout << "This character is attacking for 25 Damage\n\n";
+}

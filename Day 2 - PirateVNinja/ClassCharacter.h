@@ -7,6 +7,8 @@ class ClassCharacter : public ClassGameStructure
 {
     // Public properties
 public:
+    // Attack Baseline
+    virtual void Attack();
     //Public Property Name
     std::string Name;
     // Stat setters

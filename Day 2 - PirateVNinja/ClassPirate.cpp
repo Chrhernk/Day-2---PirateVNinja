@@ -25,3 +25,8 @@ void ClassPirate::UseSword()
 	{
 		std::cout << std::endl << "YAR, My name be " << Name << " " << StuffToSay << std::endl; // What it says
 	}
+
+	void ClassPirate::Attack()
+	{
+		std::cout << "This character is attacking for 25 Damage\n\n";
+	}
