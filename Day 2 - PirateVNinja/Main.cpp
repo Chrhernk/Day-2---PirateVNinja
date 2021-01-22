@@ -26,6 +26,9 @@ int main()
 	Pirate.UseSword();
 	Pirate.Attack();
 
+	ClassCharacter NPC;
+	NPC.Attack();
+
 	//returns 0
 	return 0;
 }
