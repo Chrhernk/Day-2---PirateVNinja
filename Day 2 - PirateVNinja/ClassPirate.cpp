@@ -27,10 +27,10 @@ void ClassPirate::UseSword()
 
 	void ClassPirate::Attack()
 	{
-		std::cout << "This character is attacking for 25 Damage\n\n";
+		std::cout << "This character is attacking for 25 Damage\n\n"; // overloading attack
 	}
 
 	void ClassPirate::Help()
 	{
-		std::cout << "\nPirates are Burly and strong, Theyre able to attack with brutal force!";
+		std::cout << "\nPirates are Burly and strong, Theyre able to attack with brutal force!"; // Help Function
 	}
