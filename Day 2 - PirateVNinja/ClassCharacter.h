@@ -11,11 +11,23 @@ public:
     virtual void Attack();
     // Help Baseline
     virtual void Help();
-    //Public Property Name   
+    //Public Property Name    
    
     // Stat setters
     void SetName(std::string NN) { Name = NN; }
-    void SetHealth(int HP) {Health = HP;}
+    void SetHealth(int HP)
+    {
+        if (HP <= 0)
+        {
+            Health = 0;
+            std::cout << "This character has expired..." << std::endl;
+        }
+        else
+        {
+            Health = HP;
+            std::cout << "You have " << Health << " Health remaining" << std::endl;
+        }
+    }
     void SetDex(int Dexterity) { Dex = Dexterity; }
     void SetCharisma(int Char) { Charisma = Char; }
     void SetStr(int PP) { Str = PP; }

@@ -34,10 +34,6 @@ int main()
 	Pirate.UseSword();
 	Pirate.Attack();
 
-	ClassCharacter NPC;
-	NPC.Attack();
-
-
 	GamePlay(); // Moving to the next function
 
 
@@ -51,14 +47,14 @@ void DisplayIntro()
 	std::cout << std::endl << "Welcome into the world of Pirates Versus Ninjas!" << std::endl << std::endl;
 	std::cout << "Prepare for the war of a lifetime!!!" << std::endl;
 	std::cout << "This world is in a war to see who is either the most powerful, or who may live the longest to kill the others!";
-	std::cout << " After you create your character, you must kill the person holding you hostage to escape!";
+	std::cout << " After you create your character, you must kill the person holding you hostage to escape!\n\n";
 }
 
 void GamePlay()  // Where the Player will chose their name
 {
 	std:: string PlayerChoice;
 
-	std::cout << "What can we call you, Player?";
+	std::cout << "What can we call you, Player? ";
 	std::cin >> PlayerName;
 
 	std::cout << "Welcome " << PlayerName << " Lets make you a character!";
@@ -72,7 +68,7 @@ void GamePlay()  // Where the Player will chose their name
 void PlayerChoice1() // The choice of what storyline you go through
 {
 	std::string PlayerChoice;
-	std::cout << "A rough and Ready Pirate? Or a sneaky, lithe Ninja?\n";
+	std::cout << "A rough and Ready Pirate? Or a sneaky, lithe Ninja? ";
 	std::cin >> PlayerChoice;
 
 	if (PlayerChoice == "Pirate")
@@ -98,15 +94,15 @@ void PiratePlay() // creating the Pirate Playthrough
 
 	Player1.SetName(PlayerName);
 
-	std::cout << "You are a Pirate! \n";
-
 	std::cout << "Welcome to the deck " << Player1.GetName() << "\n" << std::endl;
-
-	std::cout << "Here are your stats!\n";
 
 	Player1.Help();
 
+	std::cout << "\nHere are your stats!\n";
+
 	Player1.DisplayStats();
+
+	Player1.Attack();
 
 }
 
@@ -117,13 +113,11 @@ void NinjaPlay() // Ninja Playthrough
 
 	Player1.SetName(PlayerName);
 
-	std::cout << " You are a Ninja! \n";
-
 	std::cout << "Welcome to the dojo " << Player1.GetName() << "\n" << std::endl;
 
-	std::cout << "Here are your stats!\n";
-
 	Player1.Help();
+
+	std::cout << "\nHere are your stats!\n";
 
 	Player1.DisplayStats();
 

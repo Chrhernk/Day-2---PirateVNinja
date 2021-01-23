@@ -10,14 +10,14 @@ void ClassNynja::ThrowStars()
 
 ClassNynja::ClassNynja()
 {
+	std::cout << "A Nynja is born!!" << std::endl; // Debugging phrase
+
 	// Random stat and name!
 	SetName("Samurai");
 	SetHealth(100);
 	SetCharisma(RandomRoll());
 	SetDex(RandomRoll());
 	SetStr(RandomRoll());
-
-	std::cout << "A Nynja is born!!" << std::endl; // Debugging phrase
 }
 
 void ClassNynja::Talk(std::string StuffToSay)
@@ -33,7 +33,7 @@ void ClassNynja::Attack()
 	}
 	else
 	{
-		std::cout << "This is a critical hit!!! 50 damage!"; // strength check for more damage
+		std::cout << "This is a critical hit!!! 50 damage!\n"; // strength check for more damage
 	}
 }
 

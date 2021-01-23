@@ -10,14 +10,13 @@ void ClassPirate::UseSword()
 
 	ClassPirate::ClassPirate()
 	{
+		std::cout << "A Pirate is born!!" << std::endl; // A funny way of debugging 
 		// Name, and random stat generator :D
 		SetName("Buck");
 		SetHealth(100);
 		SetCharisma(RandomRoll());
 		SetDex(RandomRoll());
 		SetStr(RandomRoll()); 
-
-		std::cout << "A Pirate is born!!" << std::endl; // A funny way of debugging 
 	}
 
 	void ClassPirate::Talk(std::string StuffToSay)
@@ -33,7 +32,7 @@ void ClassPirate::UseSword()
 		}
 		else
 		{
-			std::cout << "This is a critical hit!!! 50 damage!"; // strength check for more damage
+			std::cout << "This is a critical hit!!! 50 damage!\n"; // strength check for more damage
 		}
 	}
 
