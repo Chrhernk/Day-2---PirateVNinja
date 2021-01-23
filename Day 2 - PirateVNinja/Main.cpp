@@ -103,17 +103,25 @@ void PiratePlay()
 	std::cout << "Welcome to the deck " << Player1.GetName() << std::endl;
 
 	std::cout << "Here are your stats!";
+
 	Player1.DisplayStats();
+
 }
 
 void NinjaPlay()
 {
 
 	ClassNynja Player1;
-	std::cout << " You are a Ninja! \n";
 
 	Player1.SetName(PlayerName);
 
+	std::cout << " You are a Ninja! \n";
+
+	std::cout << "Welcome to the dojo " << Player1.GetName() << std::endl;
+
+	std::cout << "Here are your stats!";
+
+	Player1.DisplayStats();
 
 }
 
