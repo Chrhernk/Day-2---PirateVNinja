@@ -11,7 +11,7 @@ public:
     virtual void Attack();
     // Help Baseline
     virtual void Help();
-    //Public Property Name 
+    //Public Property Name   
    
     // Stat setters
     void SetName(std::string NN) { Name = NN; }
