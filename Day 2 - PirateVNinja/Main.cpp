@@ -109,7 +109,7 @@ void PiratePlay() // creating the Pirate Playthrough
 }
 
 void NinjaPlay() // Ninja Playthrough
-{
+{ 
 
 	ClassNynja Player1;
 
