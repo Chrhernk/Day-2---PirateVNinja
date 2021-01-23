@@ -128,4 +128,3 @@ void NinjaPlay() // Ninja Playthrough
 	Player1.Talk("And I am you!");
 
 }
-
