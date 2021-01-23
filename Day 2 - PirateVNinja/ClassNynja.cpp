@@ -11,8 +11,7 @@ void ClassNynja::ThrowStars()
 ClassNynja::ClassNynja()
 {
 	// Random stat and name!
-	Name = "Samurai";
-
+	SetName("Samurai");
 	SetHealth(100);
 	SetCharisma(RandomRoll());
 	SetDex(RandomRoll());
@@ -23,7 +22,7 @@ ClassNynja::ClassNynja()
 
 void ClassNynja::Talk(std::string StuffToSay)
 {
-	std::cout << std::endl << "Kon'nichiwa, watashinonamaeha " << Name << " " << StuffToSay << std::endl; // What it says
+	std::cout << std::endl << "Kon'nichiwa, watashinonamaeha " << GetName() << " " << StuffToSay << std::endl; // What it says
 }
 
 void ClassNynja::Attack()

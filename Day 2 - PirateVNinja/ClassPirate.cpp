@@ -11,8 +11,7 @@ void ClassPirate::UseSword()
 	ClassPirate::ClassPirate()
 	{
 		// Name, and random stat generator :D
-		Name = "Buck";
-
+		SetName("Buck");
 		SetHealth(100);
 		SetCharisma(RandomRoll());
 		SetDex(RandomRoll());
@@ -23,7 +22,7 @@ void ClassPirate::UseSword()
 
 	void ClassPirate::Talk(std::string StuffToSay)
 	{
-		std::cout << std::endl << "YAR, My name be " << Name << " " << StuffToSay << std::endl; // What it says
+		std::cout << std::endl << "YAR, My name be " << GetName() << " " << StuffToSay << std::endl; // What it says
 	}
 
 	void ClassPirate::Attack()

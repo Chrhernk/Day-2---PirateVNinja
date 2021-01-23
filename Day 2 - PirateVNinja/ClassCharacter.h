@@ -10,13 +10,15 @@ public:
     // Attack Baseline
     virtual void Attack();
     //Public Property Name
-    std::string Name;
+   
     // Stat setters
+    void SetName(std::string NN) { Name = NN; }
     void SetHealth(int HP) {Health = HP;}
     void SetDex(int Dexterity) { Dex = Dexterity; }
     void SetCharisma(int Char) { Charisma = Char; }
     void SetStr(int PP) { Str = PP; }
     //Stat Retrievers
+    std::string GetName() { return Name; }
     int GetHealth() { return Health; }
     int GetDex() { return Dex; }
     int GetCharisma() { return Charisma; }
@@ -30,13 +32,12 @@ public:
         std::cout << " Dexterity : " << GetDex() << std::endl;
         std::cout << " Charisma : " << GetCharisma() << std::endl;
         std::cout << " Strength : " << GetStr() << std::endl;
-
-
     }
 
 private:
     //Secret stats!
-    int Health =100;
+    std::string Name;
+    int Health = 100;
     int Dex =0;
     int Charisma =0;
     int Str =0;
