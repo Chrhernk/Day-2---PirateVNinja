@@ -9,6 +9,7 @@ class ClassCharacter : public ClassGameStructure
 public:
     // Attack Baseline
     virtual void Attack();
+    virtual void Help();
     //Public Property Name
    
     // Stat setters

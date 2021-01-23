@@ -104,6 +104,8 @@ void PiratePlay()
 
 	std::cout << "Here are your stats!";
 
+	Player1.Help();
+
 	Player1.DisplayStats();
 
 }
@@ -120,6 +122,8 @@ void NinjaPlay()
 	std::cout << "Welcome to the dojo " << Player1.GetName() << std::endl;
 
 	std::cout << "Here are your stats!";
+
+	Player1.Help();
 
 	Player1.DisplayStats();
 

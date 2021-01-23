@@ -29,3 +29,8 @@ void ClassPirate::UseSword()
 	{
 		std::cout << "This character is attacking for 25 Damage\n\n";
 	}
+
+	void ClassPirate::Help()
+	{
+		std::cout << "\nPirates are Burly and strong, Theyre able to attack with brutal force!";
+	}

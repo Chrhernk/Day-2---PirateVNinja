@@ -29,3 +29,8 @@ void ClassNynja::Attack()
 {
 	std::cout << "This character is attacking for 25 Damage\n\n";
 }
+
+void ClassNynja::Help()
+{
+	std::cout << "\nNinjas are great! Theyre stealthy, and can attack without alearting anyone nearby!";
+}
