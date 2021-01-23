@@ -27,7 +27,14 @@ void ClassNynja::Talk(std::string StuffToSay)
 
 void ClassNynja::Attack()
 {
-	std::cout << "This character is attacking for 25 Damage\n\n"; /// overlaoding attack
+	if (GetStr() <= 70)
+	{
+		std::cout << "This character is attacking for 25 Damage\n\n"; /// overlaoding attack
+	}
+	else
+	{
+		std::cout << "This is a critical hit!!! 50 damage!"; // strength check for more damage
+	}
 }
 
 void ClassNynja::Help()

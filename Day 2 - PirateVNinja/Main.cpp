@@ -127,5 +127,7 @@ void NinjaPlay() // Ninja Playthrough
 
 	Player1.DisplayStats();
 
+	Player1.Attack();
+
 }
 
