@@ -38,7 +38,7 @@ int main()
 	NPC.Attack();
 
 
-	GamePlay();
+	GamePlay(); // Moving to the next function
 
 
 	//returns 0
@@ -54,7 +54,7 @@ void DisplayIntro()
 	std::cout << " After you create your character, you must kill the person holding you hostage to escape!";
 }
 
-void GamePlay() 
+void GamePlay()  // Where the Player will chose their name
 {
 	std:: string PlayerChoice;
 
@@ -69,7 +69,7 @@ void GamePlay()
 	
 }
 
-void PlayerChoice1()
+void PlayerChoice1() // The choice of what storyline you go through
 {
 	std::string PlayerChoice;
 	std::cout << "A rough and Ready Pirate? Or a sneaky, lithe Ninja?\n";
@@ -86,11 +86,11 @@ void PlayerChoice1()
 	else
 	{
 		std::cout << "That is currently not an option!";
-		PlayerChoice1();
+		PlayerChoice1(); // if they miskey, it will loop this so they can retry
 	}
 }
 
-void PiratePlay()
+void PiratePlay() // creating the Pirate Playthrough
 {
 	
 
@@ -100,9 +100,9 @@ void PiratePlay()
 
 	std::cout << "You are a Pirate! \n";
 
-	std::cout << "Welcome to the deck " << Player1.GetName() << std::endl;
+	std::cout << "Welcome to the deck " << Player1.GetName() << "\n" << std::endl;
 
-	std::cout << "Here are your stats!";
+	std::cout << "Here are your stats!\n";
 
 	Player1.Help();
 
@@ -110,7 +110,7 @@ void PiratePlay()
 
 }
 
-void NinjaPlay()
+void NinjaPlay() // Ninja Playthrough
 {
 
 	ClassNynja Player1;
@@ -119,9 +119,9 @@ void NinjaPlay()
 
 	std::cout << " You are a Ninja! \n";
 
-	std::cout << "Welcome to the dojo " << Player1.GetName() << std::endl;
+	std::cout << "Welcome to the dojo " << Player1.GetName() << "\n" << std::endl;
 
-	std::cout << "Here are your stats!";
+	std::cout << "Here are your stats!\n";
 
 	Player1.Help();
 

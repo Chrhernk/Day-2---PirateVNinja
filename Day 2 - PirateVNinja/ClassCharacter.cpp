@@ -3,7 +3,7 @@
 
 void ClassCharacter::Attack()
 {
-	std::cout << "this character is attacking with 10 hit points\n\n";
+	std::cout << "Youve been attacked for 10 hit points!!\n\n"; // Baseline attack
 }
 
 void ClassCharacter::Help() {} // Void Help function

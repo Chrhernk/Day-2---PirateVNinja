@@ -9,6 +9,7 @@ class ClassCharacter : public ClassGameStructure
 public:
     // Attack Baseline
     virtual void Attack();
+    // Help Baseline
     virtual void Help();
     //Public Property Name
    
@@ -37,7 +38,7 @@ public:
 
 private:
     //Secret stats!
-    std::string Name;
+    std::string Name; // had to change the neame to Private so that i could use the Getter to change name for player
     int Health = 100;
     int Dex =0;
     int Charisma =0;
