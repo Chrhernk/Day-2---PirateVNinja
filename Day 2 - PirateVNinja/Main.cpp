@@ -104,6 +104,8 @@ void PiratePlay() // creating the Pirate Playthrough
 
 	Player1.Attack();
 
+	Player1.Talk("And I am you!!!");
+
 }
 
 void NinjaPlay() // Ninja Playthrough
@@ -122,6 +124,8 @@ void NinjaPlay() // Ninja Playthrough
 	Player1.DisplayStats();
 
 	Player1.Attack();
+
+	Player1.Talk("And I am you!");
 
 }
 
