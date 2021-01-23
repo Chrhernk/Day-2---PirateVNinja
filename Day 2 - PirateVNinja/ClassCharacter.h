@@ -10,19 +10,21 @@ public:
     // Attack Baseline
     virtual void Attack();
     // Help Baseline
-    virtual void Help();
-    //Public Property Name    
+    virtual void Help();   
+
+    void Talk(std::string stuffToSay); // Talk 1
+    void Talk(std::string MyName, std::string stuffToSay); // Talk 2
    
     // Stat setters
     void SetName(std::string NN) { Name = NN; }
     void SetHealth(int HP)
     {
-        if (HP <= 0)
+        if (HP <= 0) // If health is less or equal to 0
         {
             Health = 0;
             std::cout << "This character has expired..." << std::endl;
         }
-        else
+        else // if not, it carries on
         {
             Health = HP;
             std::cout << "You have " << Health << " Health remaining" << std::endl;
