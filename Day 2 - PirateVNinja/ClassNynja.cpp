@@ -31,6 +31,6 @@ void ClassNynja::Attack()
 }
 
 void ClassNynja::Help()
-{
+{ 
 	std::cout << "\nNinjas are great! Theyre stealthy, and can attack without alearting anyone nearby!"; // Help function
 }
