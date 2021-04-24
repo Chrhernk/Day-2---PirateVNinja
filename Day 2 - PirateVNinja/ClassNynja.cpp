@@ -29,7 +29,7 @@ void ClassNynja::Attack()
 {
 
 	
-	if (ClassNynja::GetStr() >= 20)
+	if (ClassNynja::GetStr() >= 50)
 	{
 		std::cout << "This character is attacking for 50 Damage\n\n";
 	}
