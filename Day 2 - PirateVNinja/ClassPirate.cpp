@@ -27,5 +27,12 @@ void ClassPirate::UseSword()
 
 	void ClassPirate::Attack()
 	{
-		std::cout << "This character is attacking for 25 Damage\n\n";
+		if (ClassPirate::GetStr() >= 20)
+		{
+			std::cout << "This character is attacking for 50 Damage\n\n";
+		}
+		else
+		{
+			std::cout << "This character is attacking for 25 Damage\n\n";
+		}
 	}

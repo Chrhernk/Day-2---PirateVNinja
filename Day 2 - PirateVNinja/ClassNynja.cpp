@@ -27,5 +27,14 @@ void ClassNynja::Talk(std::string StuffToSay)
 
 void ClassNynja::Attack()
 {
-	std::cout << "This character is attacking for 25 Damage\n\n";
+
+	
+	if (ClassNynja::GetStr() >= 20)
+	{
+		std::cout << "This character is attacking for 50 Damage\n\n";
+	}
+	else
+	{
+		std::cout << "This character is attacking for 25 Damage\n\n";
+	}
 }

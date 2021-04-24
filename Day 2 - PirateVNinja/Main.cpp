@@ -8,7 +8,9 @@ void GamePlay();
 void DisplayIntro();
 void PlayerChoice1();
 void NinjaPlay();
+void NinjaPlaythrough();
 void PiratePlay();
+void PiratePlaythrough();
 
 std::string PlayerName;
 
@@ -71,29 +73,30 @@ void GamePlay()
 
 void PlayerChoice1()
 {
-	std::string PlayerChoice;
-	std::cout << "A rough and Ready Pirate? Or a sneaky, lithe Ninja?\n";
+	int PlayerChoice;
+	std::cout << "A rough and Ready Pirate [1]? Or a sneaky, lithe Ninja [2]? Choose [3] to re-read the message!\n";
 	std::cin >> PlayerChoice;
 
-	if (PlayerChoice == "Pirate")
-	{
+	switch (PlayerChoice) {
+
+	case 1:
 		PiratePlay();
-	}
-	else if (PlayerChoice == "Ninja")
-	{
+		break;
+
+	case 2:
 		NinjaPlay();
-	}
-	else
-	{
-		std::cout << "That is currently not an option!";
+		break;
+
+	case 3:
+		std::cout << "Lets take it back a notch!";
 		PlayerChoice1();
+		break;
 	}
 }
 
 void PiratePlay()
 {
 	
-
 	ClassPirate Player1;
 
 	Player1.SetName(PlayerName);
@@ -103,16 +106,26 @@ void PiratePlay()
 	std::cout << "Welcome to the deck " << Player1.GetName() << std::endl;
 
 	std::cout << "Here are your stats!";
+
 	Player1.DisplayStats();
+
+
+
 }
 
 void NinjaPlay()
 {
-
 	ClassNynja Player1;
-	std::cout << " You are a Ninja! \n";
 
 	Player1.SetName(PlayerName);
+
+	std::cout << " You are a Ninja! \n";
+
+	std::cout << "Welcome to the Sanctuary " << Player1.GetName() << std::endl;
+
+	std::cout << "Here are your stats!";
+
+	Player1.DisplayStats();
 
 
 }
