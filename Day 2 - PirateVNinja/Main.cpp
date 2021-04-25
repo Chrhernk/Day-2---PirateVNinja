@@ -738,3 +738,15 @@ void FightBoth2()
 
 	} while (NinjaNPC.GetHealth() > 0 && PirateNPC.GetHealth() > 0 && Player2.GetHealth() > 0);
 }
+
+//Opening screen with a description of the applicationand instructions - Done
+//Menu for the user to choose options - Done
+//At least 4 classes total - Really done
+//Inheritance(minimum 2 derived classes) - Done
+//Polymorphism(Overloading and overriding) - Done for attacks
+//Encapsulation - Done for Getters / Setters, if i remember correctly
+//File input and output processing - TODO:: Make a Output for each program that will show what happened in the fight
+//Multi - Threading - // Nope
+//Recursion - // No thanks
+//Exception handling - // Could do? But probibly not.
+//Abstraction - Done, I think?
