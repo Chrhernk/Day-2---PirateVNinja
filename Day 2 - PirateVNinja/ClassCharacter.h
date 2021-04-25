@@ -8,7 +8,7 @@ class ClassCharacter : public ClassGameStructure
     // Public properties
 public:
     // Attack Baseline
-    virtual void Attack();
+    virtual int Attack();
     // Help Baseline
     //virtual void Help();   
 
@@ -17,6 +17,8 @@ public:
    
     // Stat setters
     void SetName(std::string NN) { Name = NN; }
+    void Heal(int AmmountHealed) { SetHealth( Health + AmmountHealed); }
+    void TakeDamage(int Damage) { SetHealth( Health - Damage); }
     void SetHealth(int HP)
     {
         if (HP <= 0) // If health is less or equal to 0
@@ -27,7 +29,7 @@ public:
         else // if not, it carries on
         {
             Health = HP;
-            std::cout << "You have " << Health << " Health remaining" << std::endl;
+            std::cout << "This character has " << Health << " Health remaining" << std::endl;
         }
     }
     void SetDex(int Dexterity) { Dex = Dexterity; }

@@ -25,16 +25,19 @@ void ClassNynja::Talk(std::string StuffToSay)
 	std::cout << std::endl << "Kon'nichiwa, watashinonamaeha " << GetName() << " " << StuffToSay << std::endl; // What it says
 }
 
-void ClassNynja::Attack()
+int ClassNynja::Attack()
 {
-
-	
 	if (ClassNynja::GetStr() >= 50)
 	{
 		std::cout << "This character is attacking for 50 Damage\n\n";
+		int Damage = 50;
+
+		return Damage;
 	}
 	else
 	{
 		std::cout << "This character is attacking for 25 Damage\n\n";
+		int Damage = 25;
+		return Damage;
 	}
 }

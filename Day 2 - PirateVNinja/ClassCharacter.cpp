@@ -1,9 +1,11 @@
 #include "ClassCharacter.h"
 #include <iostream>
 
-void ClassCharacter::Attack()
+int ClassCharacter::Attack()
 {
 	std::cout << "Youve been attacked for 10 hit points!!\n\n"; // Baseline attack
+	int Damage = 10;
+	return Damage;
 }
 
 //void ClassCharacter::Help() {} // Void Help function

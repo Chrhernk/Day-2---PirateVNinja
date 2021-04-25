@@ -5,11 +5,12 @@
 class ClassPirate : public ClassCharacter 
 {
 public:
-	void Attack(); // attack overide
+	int Attack(); // attack overide
 	void UseSword(); // Sword use function
 	ClassPirate(); // Pirate class constructor
 	void Talk(std::string); // Talking function
 	//void Help(); // the Help function
+	
 };
 
 
