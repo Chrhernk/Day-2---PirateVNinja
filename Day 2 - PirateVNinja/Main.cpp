@@ -19,8 +19,8 @@ void FighttheNinja2();
 void FightBoth2();
 
 std::string PlayerName;
-ClassNynja Player2;
 ClassPirate Player1;
+ClassNynja Player2;
 
 // main Function
 int main() 
