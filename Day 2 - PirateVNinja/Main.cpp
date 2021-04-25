@@ -43,6 +43,12 @@ void DisplayIntro()
 	std::cout << "Prepare for the war of a lifetime!!!" << std::endl;
 	std::cout << "This world is in a war to see who is either the most powerful, or who may live the longest to kill the others!";
 	std::cout << " After you create your character, you must kill an opponant of your choice to escape!";
+
+	std::cout << "\n\n\n\n\t ***HOW TO PLAY*** \n\n\t";
+	std::cout << "\n\n 1. Choose the options you want to play out \n\n";
+	std::cout << "\n\n 2. Have fun with it, You could roll a three sided die! \n\n";
+	std::cout << "\n\n 3. Dont be afraid to lose! It happens, sometimes you have a bad roll!\n\n";
+	std::cout << "\n\n \n\n";
 }
 
 void GamePlay()  // Where the Player will chose their name
@@ -216,7 +222,7 @@ void FightthePirate1()
 		}
 	} while (PirateNPC.GetHealth() > 0 && Player1.GetHealth() > 0);
 
-	if (Player2.GetHealth() <= 0)
+	if (Player1.GetHealth() <= 0)
 	{
 		std::cout << "YOU HAVE DIED!";
 	}
@@ -290,7 +296,7 @@ void FighttheNinja1()
 			break;
 		}
 	} while (NinjaNPC.GetHealth() > 0 && Player1.GetHealth() > 0);
-	if (Player2.GetHealth() <= 0)
+	if (Player1.GetHealth() <= 0)
 	{
 		std::cout << "YOU HAVE DIED!";
 	}
