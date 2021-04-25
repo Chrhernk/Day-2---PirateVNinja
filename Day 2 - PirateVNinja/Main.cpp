@@ -72,7 +72,7 @@ void GamePlay()  // Where the Player will chose their name
 void PlayerChoice1() // The choice of what storyline you go through
 {
 	int PlayerChoice;
-	std::cout << "A rough and Ready Pirate [1]? Or a sneaky, lithe Ninja [2]? Choose [3] to re-read the message!\n";
+	std::cout << "A rough and Ready Pirate [1]? Or a sneaky, lithe Ninja [2]? Choose [3] to re-read the message!\n\n";
 	std::cin >> PlayerChoice;
 
 	switch (PlayerChoice) {
@@ -101,11 +101,7 @@ void PiratePlay() // creating the Pirate Playthrough
 
 	std::cout << "Welcome to the deck " << Player1.GetName() << "\n" << std::endl;
 
-	//Player1.Help();
-
 	std::cout << "\nHere are your stats!\n";
-
-	std::cout << "Here are your stats!";
 
 	Player1.DisplayStats();
 
@@ -136,29 +132,46 @@ void Playthrough()
 
 	int PlayerChoice;
 	std::cout << " Lets begin! You are in an arena, with the choice to make of who you face" << std::endl;
-	std::cout << " For a Pirate, Choose [1]";
-	std::cout <<  " For a Ninja, Choose [2]";
-	std::cout <<     " For Both, Choose [3]";
+	std::cout << " For a Pirate, Choose [1]\n";
+	std::cout <<  " For a Ninja, Choose [2]\n";
+	std::cout <<     " For Both, Choose [3]\n";
 	std::cin >> PlayerChoice;
 
 	switch (PlayerChoice) {
 
 	case 1:
 		std::cout << "You have chosen to fight the Pirate!";
-		//FightthePirate();
+		FightthePirate();
 		break;
 
 	case 2:
 		std::cout << "You have chosen to fight the Ninja!";
-		//FighttheNinja();
+		FighttheNinja();
 		break;
 
 	case 3:
 		std::cout << "You have chosen to fight Both at once!";
-		//FightBoth();
+		FightBoth();
 		break;
 	}
 
+
+
+}
+
+
+void FightthePirate()
+{
+
+
+}
+void FighttheNinja()
+{
+
+
+}
+void FightBoth()
+{
 
 
 }
