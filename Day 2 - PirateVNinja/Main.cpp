@@ -8,9 +8,8 @@ void GamePlay();
 void DisplayIntro();
 void PlayerChoice1();
 void NinjaPlay();
-void NinjaPlaythrough();
 void PiratePlay();
-void PiratePlaythrough();
+void Playthrough();
 
 std::string PlayerName;
 
@@ -109,7 +108,7 @@ void PiratePlay()
 
 	Player1.DisplayStats();
 
-
+	Playthrough();
 
 }
 
@@ -127,6 +126,39 @@ void NinjaPlay()
 
 	Player1.DisplayStats();
 
+	Playthrough();
 
 }
 
+void Playthrough()
+{
+	ClassPirate PirateNPC1;
+	ClassNynja NinjaNPC1;
+	ClassPirate PirateNPC2;
+	ClassNynja NinjaNPC2;
+
+	int PlayerChoice;
+	std::cout << " Lets begin! You are in an arena, with the choice to make of who you face" << std::endl;
+	std::cout << " For a Pirate, Choose [1]";
+	std::cout <<  " For a Ninja, Choose [2]";
+	std::cout <<     " For Both, Choose [3]";
+	std::cin >> PlayerChoice;
+
+	switch (PlayerChoice) {
+
+	case 1:
+		
+		break;
+
+	case 2:
+		
+		break;
+
+	case 3:
+		
+		break;
+	}
+
+
+
+}

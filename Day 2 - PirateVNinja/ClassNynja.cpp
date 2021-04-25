@@ -17,7 +17,7 @@ ClassNynja::ClassNynja()
 	SetDex(RandomRoll());
 	SetStr(RandomRoll());
 
-	std::cout << "A Nynja is born!!" << std::endl; // Debugging phrase
+	//std::cout << "A Nynja is born!!" << std::endl; // Debugging phrase
 }
 
 void ClassNynja::Talk(std::string StuffToSay)

@@ -17,7 +17,7 @@ void ClassPirate::UseSword()
 		SetDex(RandomRoll());
 		SetStr(RandomRoll()); 
 
-		std::cout << "A Pirate is born!!" << std::endl; // A funny way of debugging 
+		//std::cout << "A Pirate is born!!" << std::endl; // A funny way of debugging 
 	}
 
 	void ClassPirate::Talk(std::string StuffToSay)
