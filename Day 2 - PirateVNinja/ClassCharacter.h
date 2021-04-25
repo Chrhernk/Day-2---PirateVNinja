@@ -10,7 +10,7 @@ public:
     // Attack Baseline
     virtual void Attack();
     // Help Baseline
-    virtual void Help();   
+    //virtual void Help();   
 
     void Talk(std::string stuffToSay); // Talk 1
     void Talk(std::string MyName, std::string stuffToSay); // Talk 2

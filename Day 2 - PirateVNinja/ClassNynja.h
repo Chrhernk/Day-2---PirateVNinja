@@ -8,5 +8,5 @@ public:
 	void ThrowStars(); // Throwing Star Function
 	ClassNynja(); // Class constructor
 	void Talk(std::string); // Speaking function
-	void Help(); // The Help Function
+	//void Help(); // The Help Function
 };

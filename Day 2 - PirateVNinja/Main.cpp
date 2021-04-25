@@ -10,6 +10,9 @@ void PlayerChoice1();
 void NinjaPlay();
 void PiratePlay();
 void Playthrough();
+void FightthePirate();
+void FighttheNinja();
+void FightBoth();
 
 std::string PlayerName;
 
@@ -98,7 +101,7 @@ void PiratePlay() // creating the Pirate Playthrough
 
 	std::cout << "Welcome to the deck " << Player1.GetName() << "\n" << std::endl;
 
-	Player1.Help();
+	//Player1.Help();
 
 	std::cout << "\nHere are your stats!\n";
 
@@ -130,10 +133,6 @@ void NinjaPlay()
 
 void Playthrough()
 {
-	ClassPirate PirateNPC1;
-	ClassNynja NinjaNPC1;
-	ClassPirate PirateNPC2;
-	ClassNynja NinjaNPC2;
 
 	int PlayerChoice;
 	std::cout << " Lets begin! You are in an arena, with the choice to make of who you face" << std::endl;
@@ -145,15 +144,18 @@ void Playthrough()
 	switch (PlayerChoice) {
 
 	case 1:
-		
+		std::cout << "You have chosen to fight the Pirate!";
+		//FightthePirate();
 		break;
 
 	case 2:
-		
+		std::cout << "You have chosen to fight the Ninja!";
+		//FighttheNinja();
 		break;
 
 	case 3:
-		
+		std::cout << "You have chosen to fight Both at once!";
+		//FightBoth();
 		break;
 	}
 
