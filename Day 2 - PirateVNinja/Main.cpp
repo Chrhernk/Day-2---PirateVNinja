@@ -282,10 +282,24 @@ void FighttheNinja1() // For if you want to fight a Ninja as a Pirate, Carries t
 	if (Player1.GetHealth() <= 0)
 	{
 		std::cout << "YOU HAVE DIED!";
+
+		std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+		WinLoss << "You Lost! Here are your Stats at the end of the battle!\n\n";
+		Player1.WriteStattoFile(&WinLoss);
+		WinLoss << "\n\n";
+		NinjaNPC.WriteStattoFile(&WinLoss);
+		WinLoss.close();
 	}
 	if (NinjaNPC.GetHealth() <= 0)
 	{
 		std::cout << " ENEMY PIRATE DIED!";
+
+		std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+		WinLoss << "You Won! Here are your Stats at the end of the battle!\n\n";
+		Player1.WriteStattoFile(&WinLoss);
+		WinLoss << "\n\n";
+		NinjaNPC.WriteStattoFile(&WinLoss);
+		WinLoss.close();
 	}
 
 }
@@ -401,15 +415,31 @@ void FightBoth1()
 		if (Player1.GetHealth() <= 0)
 		{
 			std::cout << "YOU HAVE DIED!";
+
+			std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+			WinLoss << "You Lost! Here are your Stats at the end of the battle!\n\n";
+			Player1.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss.close();
+
 		}
-		if (PirateNPC.GetHealth() <= 0)
+		if (PirateNPC.GetHealth() <= 0 && NinjaNPC.GetHealth() <=0)
 		{
-			std::cout << "PIRATE DIED!";
+			std::cout << "ENEMIES DIED!";
+
+			std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+			WinLoss << "You Lost! Here are your Stats at the end of the battle!\n\n";
+			Player1.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss.close();
 		}
-		if (NinjaNPC.GetHealth() <= 0)
-		{
-			std::cout << "NINJA DIED!";
-		}
+		
 
 
 	} while (NinjaNPC.GetHealth() > 0 && PirateNPC.GetHealth() > 0 && Player1.GetHealth() > 0);
@@ -518,10 +548,22 @@ void FightthePirate2()
 	if (Player2.GetHealth() <= 0)
 	{
 		std::cout << "YOU HAVE DIED!";
+		std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+		WinLoss << "You Lost! Here are your Stats at the end of the battle!\n\n";
+		Player2.WriteStattoFile(&WinLoss);
+		WinLoss << "\n\n";
+		PirateNPC.WriteStattoFile(&WinLoss);
+		WinLoss.close();
 	}
 	if (PirateNPC.GetHealth() <= 0)
 	{
 		std::cout << " ENEMY PIRATE DIED!";
+		std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+		WinLoss << "You Won! Here are your Stats at the end of the battle!\n\n";
+		Player2.WriteStattoFile(&WinLoss);
+		WinLoss << "\n\n";
+		PirateNPC.WriteStattoFile(&WinLoss);
+		WinLoss.close();
 	}
 }
 void FighttheNinja2()
@@ -596,10 +638,22 @@ void FighttheNinja2()
 	if (Player2.GetHealth() <= 0)
 	{
 		std::cout << "YOU HAVE DIED!";
+		std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+		WinLoss << "You Lost! Here are your Stats at the end of the battle!\n\n";
+		Player2.WriteStattoFile(&WinLoss);
+		WinLoss << "\n\n";
+		NinjaNPC.WriteStattoFile(&WinLoss);
+		WinLoss.close();
 	}
 	if (NinjaNPC.GetHealth() <= 0)
 	{
 		std::cout << " ENEMY NINJA DIED!";
+		std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+		WinLoss << "You Won! Here are your Stats at the end of the battle!\n\n";
+		Player2.WriteStattoFile(&WinLoss);
+		WinLoss << "\n\n";
+		NinjaNPC.WriteStattoFile(&WinLoss);
+		WinLoss.close();
 	}
 }
 void FightBoth2()
@@ -714,14 +768,29 @@ void FightBoth2()
 		if (Player2.GetHealth() <= 0)
 		{
 			std::cout << "YOU HAVE DIED!";
+
+			std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+			WinLoss << "You Lost! Here are your Stats at the end of the battle!\n\n";
+			Player1.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss.close();
+			
 		}
-		if (PirateNPC.GetHealth() <= 0)
+		if (PirateNPC.GetHealth() <= 0 && NinjaNPC.GetHealth() <= 0)
 		{
-			std::cout << " ENEMY PIRATE DIED!";
-		}
-		if (NinjaNPC.GetHealth() <= 0)
-		{
-			std::cout << "ENEMY NINJA DIED!";
+			std::cout << " ENEMIES DIED!";
+
+			std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
+			WinLoss << "You Won! Here are your Stats at the end of the battle!\n\n";
+			Player1.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss << "\n\n";
+			NinjaNPC.WriteStattoFile(&WinLoss);
+			WinLoss.close();
 		}
 
 
