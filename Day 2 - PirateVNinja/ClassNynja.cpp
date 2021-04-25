@@ -10,6 +10,8 @@ void ClassNynja::ThrowStars()
 
 ClassNynja::ClassNynja()
 {
+	std::cout << "A Nynja is born!!" << std::endl; // Debugging phrase
+
 	// Random stat and name!
 	SetName("Samurai");
 	SetHealth(100);

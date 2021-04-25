@@ -10,6 +10,7 @@ void ClassPirate::UseSword()
 
 	ClassPirate::ClassPirate()
 	{
+		std::cout << "A Pirate is born!!" << std::endl; // A funny way of debugging 
 		// Name, and random stat generator :D
 		SetName("Buck");
 		SetHealth(100);
