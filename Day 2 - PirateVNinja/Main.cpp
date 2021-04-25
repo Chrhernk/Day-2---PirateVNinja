@@ -300,9 +300,107 @@ void FighttheNinja1()
 }
 void FightBoth1()
 {
+	int PlayerChoice;
+
 	ClassNynja NinjaNPC;
 	ClassPirate PirateNPC;
 
+	PirateNPC.DisplayStats();
+	NinjaNPC.DisplayStats();
+
+	do {
+		std::cout << "What would you like to do?\n\n";
+		std::cout << " HEAL? [1]\n";
+		std::cout << " ATTACK? [2]\n";
+		std::cout << " CHECK? [3]\n";
+		std::cin >> PlayerChoice;
+		switch (PlayerChoice) {
+
+		case 1:
+			std::cout << "You have chosen to Heal yourself!";
+
+			Player1.Heal(10);
+
+			break;
+
+		case 2:
+			std::cout << "You have chosen to Attack!";
+
+			NinjaNPC.TakeDamage(Player1.Attack());
+			PirateNPC.TakeDamage(Player1.Attack());
+
+			break;
+
+		case 3:
+			std::cout << "You have chosen to Check!\n\n";
+
+			std::cout << Player1.GetName() << " : YOU HAVE " << Player1.GetHealth() << " HP";
+			std::cout << "\n\n\n" << std::endl;
+			std::cout << " ENEMY NINJA HAS " << NinjaNPC.GetHealth() << " HP\n";
+			std::cout << "\n\n\n" << std::endl;
+			std::cout << " ENEMY PIRATE HAS " << PirateNPC.GetHealth() << " HP\n";
+
+			break;
+		}
+		int NPCCHOICE;
+		NPCCHOICE = rand() % 3;
+		switch (NPCCHOICE) {
+
+		case 1:
+			std::cout << "Enemy has chosen to Heal!";
+
+			NinjaNPC.Heal(10);
+
+			break;
+
+		case 2:
+			std::cout << "Enemy has chosen to Attack!";
+
+			Player1.TakeDamage(NinjaNPC.Attack());
+
+			break;
+
+		case 3:
+			std::cout << "Enemy has chosen to Check!\n\n";
+
+			std::cout << NinjaNPC.GetName() << " : YOU HAVE " << NinjaNPC.GetHealth() << " HP";
+			std::cout << "\n\n\n" << std::endl;
+			std::cout << PirateNPC.GetName() << " : YOU HAVE " << PirateNPC.GetHealth() << " HP";
+			std::cout << "\n\n\n" << std::endl;
+			std::cout << " ENEMY HAS " << Player1.GetHealth() << " HP\n";
+
+			break;
+		}
+		int NPCCHOICE2;
+		NPCCHOICE2 = rand() % 3;
+		switch (NPCCHOICE2) {
+
+		case 1:
+			std::cout << "Enemy has chosen to Heal!";
+
+			PirateNPC.Heal(10);
+
+			break;
+
+		case 2:
+			std::cout << "Enemy has chosen to Attack!";
+
+			Player1.TakeDamage(PirateNPC.Attack());
+
+			break;
+
+		case 3:
+			std::cout << "Enemy has chosen to Check!\n\n";
+
+			std::cout << NinjaNPC.GetName() << " : YOU HAVE " << NinjaNPC.GetHealth() << " HP";
+			std::cout << "\n\n\n" << std::endl;
+			std::cout << PirateNPC.GetName() << " : YOU HAVE " << PirateNPC.GetHealth() << " HP";
+			std::cout << "\n\n\n" << std::endl;
+			std::cout << " ENEMY HAS " << Player1.GetHealth() << " HP\n";
+
+			break;
+		}
+	} while (NinjaNPC.GetHealth() > 0 && PirateNPC.GetHealth() > 0 && Player1.GetHealth() > 0);
 
 
 
