@@ -1,5 +1,6 @@
 #pragma once
 #include <string> 
+#include <fstream>
 #include<iostream>
 #include "ClassGameStructure.h"
 // Class Definition
@@ -17,9 +18,9 @@ public:
    
     // Stat setters
     void SetName(std::string NN) { Name = NN; }
-    void Heal(int AmmountHealed) { SetHealth( Health + AmmountHealed); }
-    void TakeDamage(int Damage) { SetHealth( Health - Damage); }
-    void SetHealth(int HP)
+    void Heal(int AmmountHealed) { SetHealth( Health + AmmountHealed); } // Sets the ammount healed
+    void TakeDamage(int Damage) { SetHealth( Health - Damage); }// sets the damage taken
+    void SetHealth(int HP) // sets our health
     {
         if (HP <= 0) // If health is less or equal to 0
         {
@@ -50,6 +51,14 @@ public:
         std::cout << " Dexterity : " << GetDex() << std::endl;
         std::cout << " Charisma : " << GetCharisma() << std::endl;
         std::cout << " Strength : " << GetStr() << std::endl;
+    }
+    void WriteStattoFile(std::ofstream *FileIn)
+    {
+        *FileIn << std::endl << "Name : " << Name << std::endl;
+        *FileIn << " Health : " << GetHealth() << std::endl;
+        *FileIn << " Dexterity : " << GetDex() << std::endl;
+        *FileIn << " Charisma : " << GetCharisma() << std::endl;
+        *FileIn << " Strength : " << GetStr() << std::endl;
     }
 
 private:

@@ -1,0 +1,32 @@
+You Lost! Here are your Stats at the end of the battle!
+
+
+Name : Chris
+ Health : 0
+ Dexterity : 68
+ Charisma : 42
+ Strength : 35
+
+
+
+Name : Buck
+ Health : 10
+ Dexterity : 37
+ Charisma : 70
+ Strength : 79
+You won! Here are your Stats at the end of the battle!
+
+
+Name : Cj
+ Health : 50
+ Dexterity : 68
+ Charisma : 42
+ Strength : 35
+
+
+
+Name : Buck
+ Health : 0
+ Dexterity : 93
+ Charisma : 57
+ Strength : 62
