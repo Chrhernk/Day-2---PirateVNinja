@@ -29,13 +29,13 @@ void ClassPirate::UseSword()
 	{
 		if (ClassPirate::GetStr() >= 50)
 		{
-			std::cout << "This character is attacking for 50 Damage\n\n";
+			std::cout << GetName() << " is attacking for 50 Damage\n\n";
 			int Damage = 50;
 			return Damage;
 		}
 		else
 		{
-			std::cout << "This character is attacking for 25 Damage\n\n";
+			std::cout << GetName() << " is attacking for 25 Damage\n\n";
 			int Damage = 25;
 			return Damage;
 		}

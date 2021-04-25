@@ -24,12 +24,12 @@ public:
         if (HP <= 0) // If health is less or equal to 0
         {
             Health = 0;
-            std::cout << "This character has expired..." << std::endl;
+            std::cout << Name << " has expired..." << std::endl;
         }
         else // if not, it carries on
         {
             Health = HP;
-            std::cout << "This character has " << Health << " Health remaining" << std::endl;
+            std::cout << Name << " has " << Health << " Health remaining" << std::endl;
         }
     }
     void SetDex(int Dexterity) { Dex = Dexterity; }
