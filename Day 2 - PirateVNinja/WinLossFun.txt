@@ -30,3 +30,35 @@ Name : Buck
  Dexterity : 93
  Charisma : 57
  Strength : 62
+You Won! Here are your Stats at the end of the battle!
+
+
+Name : Chris
+ Health : 70
+ Dexterity : 70
+ Charisma : 1
+ Strength : 25
+
+
+
+Name : Buck
+ Health : 0
+ Dexterity : 13
+ Charisma : 98
+ Strength : 16
+You Lost! Here are your Stats at the end of the battle!
+
+
+Name : Chris
+ Health : 0
+ Dexterity : 68
+ Charisma : 42
+ Strength : 35
+
+
+
+Name : Samurai
+ Health : 20
+ Dexterity : 75
+ Charisma : 56
+ Strength : 68
