@@ -765,7 +765,7 @@ void FightBoth2()
 
 			std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
 			WinLoss << "You Lost! Here are your Stats at the end of the battle!\n\n";
-			Player1.WriteStattoFile(&WinLoss);
+			Player2.WriteStattoFile(&WinLoss);
 			WinLoss << "\n\n";
 			PirateNPC.WriteStattoFile(&WinLoss);
 			WinLoss << "\n\n";
@@ -779,7 +779,7 @@ void FightBoth2()
 
 			std::ofstream WinLoss("WinLossFun.txt", std::ofstream::app);
 			WinLoss << "You Won! Here are your Stats at the end of the battle!\n\n";
-			Player1.WriteStattoFile(&WinLoss);
+			Player2.WriteStattoFile(&WinLoss);
 			WinLoss << "\n\n";
 			PirateNPC.WriteStattoFile(&WinLoss);
 			WinLoss << "\n\n";
