@@ -62,3 +62,27 @@ Name : Samurai
  Dexterity : 75
  Charisma : 56
  Strength : 68
+You Won! Here are your Stats at the end of the battle!
+
+
+Name : Buck
+ Health : 50
+ Dexterity : 68
+ Charisma : 42
+ Strength : 35
+
+
+
+Name : Buck
+ Health : 0
+ Dexterity : 44
+ Charisma : 59
+ Strength : 98
+
+
+
+Name : Samurai
+ Health : 0
+ Dexterity : 7
+ Charisma : 16
+ Strength : 24
