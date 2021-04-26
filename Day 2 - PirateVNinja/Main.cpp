@@ -72,7 +72,6 @@ void PlayerChoice1() // The choice of what storyline you go through
 		break;
 	}
 }
-
 void PiratePlay() // creating the Pirate Playthrough
 {
 	Player1.SetName(PlayerName);
@@ -81,7 +80,6 @@ void PiratePlay() // creating the Pirate Playthrough
 	Player1.DisplayStats();
 	Playthrough();
 }
-
 void NinjaPlay() // Creating the Ninja Playthrough
 {
 	Player2.SetName(PlayerName);
@@ -91,7 +89,6 @@ void NinjaPlay() // Creating the Ninja Playthrough
 	Player2.DisplayStats();
 	Playthrough2();
 }
-
 void Playthrough() // Playthrough 1 - A pritate Playthrough!, with a switch statement to decide what you're fighting
 {
 	int PlayerChoice;
@@ -115,8 +112,6 @@ void Playthrough() // Playthrough 1 - A pritate Playthrough!, with a switch stat
 		break;
 	}
 }
-
-
 void FightthePirate1() // Pirate v Pirate
 {
 	int PlayerChoice;
@@ -474,8 +469,6 @@ void Playthrough2()
 	}
 
 }
-
-
 void FightthePirate2() // We fight a Pirate as a ninja
 {
 	int PlayerChoice;
@@ -797,4 +790,3 @@ void FightBoth2()
 
 	} while ((NinjaNPC.GetHealth() > 0 || PirateNPC.GetHealth() > 0) && Player2.GetHealth() > 0); // while any of them are alive, It continues
 } 
-
